@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+Auteur: Manuela Kengmo
+Date:  24 avril 2024 
+Suject: projet 1 
+-->
+<html lang="fr">
+  <head>
+    <title>Mon Modèle - Accueil</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page d'accueil contenant une presentation et des images"
+    />
+    <meta name="keywords" content="galerie, navigation,listes,texte, images" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* Ajout d une  galerie  d image  */
+      .gallery {
+        display: flex;
+        gap: 10px;
+        padding: 10px;
+        overflow-x: hidden;
+        justify-content: center;
+        flex-wrap: nowrap;
+      }
+      /* modification des dimensions des images de la galerie */
+
+      .gallery-item {
+        width: 250px; /* Largeur fixe pour toutes les images */
+        height: 300px; /* Hauteur fixe pour toutes les images */
+        object-fit: cover; /* Pour couvrir et garder le ratio de l'image */
+        cursor: pointer;
+        transition: transform 0.5s;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.1);
+      }
+
+      .card {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Mon  univers</h1>
+      <p>Accueil</p>
+    </div>
+
+    <div class="topnav" id="gras-id">
+      <a href="index.html">Accueil</a>
+      <a href="origine.html">Origines</a>
+      <a href="passions.html">Passions</a>
+      <a href="choix.html">Fruits</a>
+      <a href="contact.html" style="float: right">Contact</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>PRESENTATION</h2>
+          <h5>Manuela Kengmo, 25 Mai, 2024</h5>
+          <div class="gallery">
+            <img
+              src="image/IMG-20231225-WA0031.jpg"
+              alt="cadeau"
+              class="gallery-item"
+            />
+            <img
+              src="image/IMG-20231228-WA0010-1.jpg"
+              alt="moi a noel"
+              class="gallery-item"
+            />
+            <img
+              src="image/IMG-20231228-WA0017-1.jpg"
+              alt="moi a paque"
+              class="gallery-item"
+            />
+
+            <img src="image/20231225_172127.jpg" alt="moi a noel" class="gallery-item" />
+            <img
+              src="image/IMG_20240101_185728225_BURST000_COVER_TOP.jpg"
+              alt="moi"
+              class="gallery-item"
+            />
+          </div>
+          <p class="gras">Qui suis je ?</p>
+          <p>
+            Je m'appelle Manuela Kengmo, je suis étudiante au CCNB de Bathurst.
+            Je suis originaire du Cameroun et je suis actuellement en formation
+            en programmation et application mobile au Collège Communautaire du
+            Nouveau-Brunswick. En parallèle, je suis une formation de préposé au
+            soin. Bonjour et bienvenue! Vous trouverez ici des informations sur
+            mes origines, mes passe-temps, et ce que signifie être introverti.
+            Bonne visite!
+          </p>
+        </div>
+        <div class="card">
+          <h2>Ma personnalité</h2>
+          <h5>Manuela Kengmo, 25 mai, 2024</h5>
+          <div class="gallery">
+            <img
+              src="image/understanding-introverts.png"
+              alt="description"
+              class="gallery-item"
+            />
+            <img
+              src="image/introtvertie9.jpg"
+              alt="introvertie"
+              class="gallery-item"
+            />
+
+            <img src="image/i.png" alt=" description" class="gallery-item" />
+          </div>
+          <br />
+          <div class="source-commune"></div>
+          <p class="gras">Comment je suis ?</p>
+          <p>
+            Être introverti signifie avoir une personnalité centrée sur le monde
+            intérieur des pensées et des sentiments. Les introvertis trouvent
+            souvent leur énergie dans la solitude et les activités calmes plutôt
+            que dans les interactions sociales intensives.
+          </p>
+          <ul>
+            <li>Les caractéristiques des introvertis :</li>
+            <ul>
+              <li>
+                Ils préfèrent les conversations profondes aux discussions
+                superficielles.
+              </li>
+              <li>Ils ont besoin de temps seul pour se ressourcer.</li>
+              <li>Ils sont souvent réfléchis et observateurs.</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+
+      <div class="rightcolumn">
+        <div class="card">
+          <h2>Ma famille</h2>
+          <div>
+            <img
+              src="image/IMG-20230104-WA0048.jpg"
+              alt="famille"
+              height="200"
+              width="200"
+            />
+          </div>
+          <p>
+            Ma famille est constituées de 7 membres dont parmi les enfants nous
+            avons 3 filles et deux garçons
+          </p>
+        </div>
+        <div class="card">
+          <h3>Mes Animaux préférés</h3>
+          <div>
+            <img
+              class="image-container"
+              src="image/228182-bunnies-animals-rabbits.jpg"
+              alt="lapin"
+              height="230"
+              width="210"
+              title="rabbits"
+            />
+          </div>
+
+          <div class="image-container">
+            <img
+              src="image/dog-4988985_1280.jpg"
+              alt="dog"
+              height="230"
+              width="210"
+              title="dog"
+            />
+          </div>
+          <div class="image-container">
+            <img
+              src="image/chat-2053032_1280.jpg"
+              alt="chat"
+              height="230"
+              width="210"
+              title="chat"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <h3>Remerciement</h3>
+          <p>
+            Merci d'avoir consulté mon site. N'hésitez pas à me contacter si
+            vous avez des questions
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Manuela Kengmo. Tous droits réservés.</p>
+
+      <div id="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="origine.html">Origines</a>
+        <a href="passions.html">Passions</a>
+        <a href="choix.html">Fruits</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>

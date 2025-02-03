@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--
+Auteur: Manuela Kengmo
+Date:  24 avril 2024 
+Suject: projet 1 
+-->
+<html lang="fr">
+  <head>
+    <title>Mon Modèle - Fruits</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page de contenant des fruits et leurd bienfaits."
+    />
+    <meta name="keywords" content="table, navigation,css,liste, images" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* modification du font et de la couleur */
+      body {
+        font-family: Arial, sans-serif;
+
+        background-color: #f4f4f9;
+      }
+      /* modification de la couleur fakeimg */
+      .fakeimg {
+        background-color: lightcyan;
+        width: 100%;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Mon  univers</h1>
+      <p>Fruits</p>
+    </div>
+
+    <div class="topnav" id="gras-id">
+      <a href="index.html">Accueil</a>
+      <a href="origine.html">Origines</a>
+      <a href="passions.html">Passions</a>
+      <a href="choix.html">Fruits</a>
+      <a href="contact.html" style="float: right">Contact</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Les Fruits et leurs Bienfaits</h2>
+          <h5>Manuela Kengmo, 25 mai, 2024</h5>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Fruit</th>
+                <th>Vitamines Principales</th>
+                <th>Bienfaits pour la Santé</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pomme</td>
+                <td>Vitamine C, Vitamine K</td>
+                <td>
+                  <ul>
+                    <li>Améliore la digestion</li>
+                    <li>Renforce le système immunitaire</li>
+                    <li>Bon pour le cœur</li>
+                  </ul>
+                </td>
+                <td class="image-container">
+                  <img
+                    src="image/istockphoto-185262648-1024x1024.jpg"
+                    alt="pomme" title="image pomme provenant de pixaby.com"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Banane</td>
+                <td>Vitamine B6, Vitamine C</td>
+                <td>
+                  <ul>
+                    <li>Fournit de l'énergie rapide</li>
+                    <li>Aide à la digestion</li>
+                    <li>Bon pour la santé cardiaque</li>
+                  </ul>
+                </td>
+                <td class="image-container">
+                  <img src="image/banana-1949166_640.jpg" alt="Banane" title="image provenant de pixaby.com" />
+                </td>
+              </tr>
+              <tr>
+                <td>Orange</td>
+                <td>Vitamine C, Folate</td>
+                <td>
+                  <ul>
+                    <li>Renforce le système immunitaire</li>
+                    <li>Améliore la santé de la peau</li>
+                    <li>Réduit le risque de maladies chroniques</li>
+                  </ul>
+                </td>
+                <td class="image-container">
+                  <img src="image/tangerines-1721633_640.jpg" alt="Orange" title="image provenant de pixaby.com"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Fraise</td>
+                <td>Vitamine C, Manganèse</td>
+                <td>
+                  <ul>
+                    <li>Anti-inflammatoire</li>
+                    <li>Riche en antioxydants</li>
+                    <li>Améliore la santé cardiaque</li>
+                  </ul>
+                </td>
+                <td class="image-container">
+                  <img src="image/fraise.jpg" alt="Fraise" title="image provenant de pixaby.com"/>
+                </td>
+              </tr>
+              <tr>
+                <td>Raisin</td>
+                <td>Vitamine C, Vitamine K</td>
+                <td>
+                  <ul>
+                    <li>Améliore la santé des os</li>
+                    <li>Bon pour la vision</li>
+                    <li>Réduit le risque de maladies cardiaques</li>
+                  </ul>
+                </td>
+                <td class="image-container">
+                  <img src="image/grapes-1717387_640.jpg" alt="Raisin" title="image provenant de pixaby.com" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <h3>Mes Fruits Preferees</h3>
+
+          <div class="fakeimg">
+            <p class="image-container">
+              mandarine<img src="image/orange_fruit.jpg" alt="orange" title="image provenant de pixaby.com" />
+            </p>
+          </div>
+
+          <div class="fakeimg">
+            <p class="source-commune">
+              mangue
+              <img src="image/mangue-produit-AdobeStock_305939384.jpg" alt="mangue" title="image de mangue provenant de pinterest.com"/>
+            </p>
+          </div>
+
+          <div class="fakeimg">
+            <p class="source-commune">
+              corossol <img src="image/20200528_150342.jpg" alt="corrosol" title="image de corossol provenant de pinterest.com"/>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Manuela Kengmo. Tous droits réservés.</p>
+
+      <div id="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="origine.html">Origines</a>
+        <a href="passions.html">Passions</a>
+        <a href="choix.html">Fruits</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>

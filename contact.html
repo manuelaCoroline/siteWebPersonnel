@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--
+Auteur: Manuela Kengmo
+Date:  24 avril 2024 
+Sujet: devoir 1 
+-->
+<html lang="fr">
+  <head>
+    <title>Mon Modèle - Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Page de contact pour me joindre. Remplissez le formulaire ou trouvez mes réseaux sociaux."
+    />
+    <meta name="keywords" content="contact, formulaire, réseaux sociaux" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+      /* modification des propiretes du header */
+      header {
+        background: #333;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      /* modificationdes proprietes de label,input et textarea pour le rendre plus flexibles et agreable a la vue  */
+      .form-group {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+      }
+      .form-group label {
+        flex: 1;
+        margin-right: 1rem;
+      }
+      .form-group input,
+      .form-group textarea {
+        flex: 2;
+        padding: 0.5rem;
+      }
+      /* modificationdes proprietes des buttons  pour qu'il soit sur la memem ligne ,modificationde la couleur ajustement de la taille  */
+
+      .form-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+      }
+      .form-buttons input {
+        width: 48%;
+        padding: 1rem;
+        border: none;
+        cursor: pointer;
+      }
+      .form-buttons input:hover {
+        background-color: #555;
+      }
+      /* class  pour modifier le lien des media sociaux */
+      .social-media {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .social-media a {
+        margin: 0 1rem;
+        text-decoration: none;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Mon  univers</h1>
+      <p>Contact</p>
+    </div>
+
+    <div class="topnav" id="gras-id">
+      <a href="index.html">Accueil</a>
+      <a href="origine.html">Origines</a>
+      <a href="passions.html">Passions</a>
+      <a href="choix.html">Fruits</a>
+      <a href="contact.html" style="float: right">Contact</a>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>Contactez-moi</h2>
+          <h5>Manuela Kengmo, 24 Mai, 2024</h5>
+          <section>
+            <h2>Envoyez-moi un message</h2>
+            <form
+              action="mailto:order@pizzaalfredo.com?subject=information"
+              method="post"
+              style="background-color: lightcyan"
+            >
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" required="required" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id=" message" name="message" rows="5"></textarea>
+              </div>
+
+              <div class="form-buttons">
+                <input type="submit" value="Envoyer" />
+                <input type="reset" value="Réinitialiser" />
+              </div>
+            </form>
+          </section>
+          <div class="card">
+            <h2>Mes reseaux</h2>
+            <h5>Manuela Kengmo, 25 mai, 2024</h5>
+            <section class="social-media">
+              <h3>Retrouvez-moi sur les réseaux sociaux</h3>
+              <p>
+                <a
+                  href="https://www.facebook.com/manuella.kengmo.5"
+                  target="_blank"
+                  >Facebook</a
+                >
+                <a href="https://x.com/KengmoManu" target="_blank">Twitter</a>
+                <a
+                  href="https://mail.google.com/mail/u/0/#inbox"
+                  target="_blank"
+                  >Gmail</a
+                >
+                <a
+                  href="https://www.linkedin.com/in/manuela-kengmo-740368291/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; 2024 Manuela Kengmo. Tous droits réservés.</p>
+
+      <div id="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="origine.html">Origines</a>
+        <a href="passions.html">Passions</a>
+        <a href="choix.html">Fruits</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </body>
+</html>
